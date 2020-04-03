@@ -269,9 +269,9 @@ suite('Functional Tests', function() {
       		.fill("surname", "Vespucci")
       		.pressButton("submit", function() {
       			browser.assert.success();
-      			browser.assert.text("span#name", "Amerigo");
-      			browser.assert.text("span#surname", "Vespucci");
-      			browser.assert.element("span#dates", 1);
+      			browser.assert.text('span#name', 'Amerigo');
+      			browser.assert.text('span#surname', 'Vespucci');
+      			browser.assert.element('span#dates', 1);
       			done();
       		})
         // fill the form, and submit.
